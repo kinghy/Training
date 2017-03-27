@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="train:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/train_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="train/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="train" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-4.3.7.RELEASE" />
+          <element id="library" level="project" name="Hibernate 4.2.2-4.2.2" />
+          <element id="library" level="project" name="Spring MVC-4.3.7.RELEASE" />
+          <element id="library" level="project" name="org.aspectj:aspectjweaver:1.8.10" />
+          <element id="library" level="project" name="com.fasterxml.jackson.core:jackson-core:2.5.0" />
+          <element id="library" level="project" name="com.fasterxml.jackson.core:jackson-databind:2.5.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
