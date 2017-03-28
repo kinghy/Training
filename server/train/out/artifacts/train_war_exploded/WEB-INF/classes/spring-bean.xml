@@ -16,15 +16,15 @@
     <!--<bean id="categoryDAO" class="com.letcome.dao.CategoryDAO">-->
         <!--<property name="sessionFactory" ref="sessionFactory"></property>-->
     <!--</bean>-->
-    <!--<bean id="usersDAO" class="com.letcome.dao.UsersDAO">-->
-        <!--<property name="sessionFactory" ref="sessionFactory"></property>-->
-    <!--</bean>-->
+    <bean id="usersDAO" class="com.train.dao.UsersDAO">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
     <!--<bean id="imagesDAO" class="com.letcome.dao.ImageDAO">-->
         <!--<property name="sessionFactory" ref="sessionFactory"></property>-->
     <!--</bean>-->
-    <!--<bean id="userService" class="com.letcome.service.UserService">-->
-        <!--<property name="userDao" ref="usersDAO"></property>-->
-    <!--</bean>-->
+    <bean id="userService" class="com.train.service.UserService">
+        <property name="userDao" ref="usersDAO"></property>
+    </bean>
     <!--<bean id="imageService" class="com.letcome.service.ImageService">-->
         <!--<property name="imageDao" ref="imagesDAO"></property>-->
         <!--<property name="productDao" ref="productDAO"></property>-->

@@ -8,7 +8,7 @@ import java.util.Date;
  */
 
 @Entity(name="users")
-public class UserVO {
+public class UserVO extends EntityVO{
 
     public UserVO(){
         super();
@@ -19,31 +19,31 @@ public class UserVO {
     @Column(name="id")
     private Integer id;
 
-    @Column(name="firstname",length=16)
+    @Column(name="firstname",length=16,nullable = false)
     private String firstname;
 
-    @Column(name="lastname",length=16)
+    @Column(name="lastname",length=16,nullable = false)
     private String lastname;
 
     @Column(name="companyid",nullable = true)
     private String companyid;
 
-    @Column(name="username",length=100,nullable = true)
+    @Column(name="username",length=100,nullable = false)
     private String username;
 
-    @Column(name="password",length=50,nullable = true)
+    @Column(name="password",length=50,nullable = false)
     private String password;
 
-    @Column(name="roll",length=50)
+    @Column(name="roll",length=50,nullable = false)
     private String roll;
 
-    @Column(name="note",length=100)
+    @Column(name="note",length=100,nullable = true)
     private String note;
 
-    @Column(name="creattime")
+    @Column(name="creattime",nullable = true)
     private long creattime;
 
-    @Column(name="lasetupdatetime")
+    @Column(name="lasetupdatetime",nullable = true)
     private long lasetupdatetime;
 
 //    @Transient
