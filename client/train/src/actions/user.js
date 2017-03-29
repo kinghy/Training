@@ -2,6 +2,7 @@
  * Created by rjt on 17/3/24.
  */
 import * as ActionType from '../constants/ActionTypes'
+import { browserHistory } from 'react-router'
 
 // export function changeUserName(username){
 //
@@ -51,7 +52,7 @@ export const login = (username,password) => (dispatch, getState) => {
             if(responseData.result=="N"){
                 throw responseData.errorMsg;
             }
-            alert('登录成功')
+            browserHistory.push("/board")
         })
         .catch((e)=>{
             alert(e)

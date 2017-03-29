@@ -22,15 +22,12 @@ class Login extends Component {
             this.username.focus()
             return
         }
-
         if(this.password.value==""){
             alert("请填写用户名")
             this.password.focus()
             return
         }
-
         this.props.login(this.username.value,this.password.value)
-
     }
 
     render(){
